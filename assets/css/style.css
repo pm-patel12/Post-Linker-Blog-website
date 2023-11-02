@@ -1368,3 +1368,13 @@ header .primaryBtn {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+/*  */
+/*  */
+/* Category page */
+/*  */
+/*  */
+
+.article_layout_4 .inner.grid2 {
+    grid-template-columns: 1fr 1fr;
+}
