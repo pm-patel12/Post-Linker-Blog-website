@@ -127,6 +127,35 @@
         display: flex;
     }
 
+    .article_layout_1 .inner .article_bg_img_card:nth-child(1) {
+        grid-area: unset;
+    }
+
+    .article_layout_1 .inner .article_bg_img_card:nth-child(2) {
+        grid-area: unset;
+    }
+
+    .article_layout_1 .inner .article_bg_img_card:nth-child(3) {
+        grid-area: unset;
+    }
+
+    .article_layout_1 .inner .article_bg_img_card:nth-child(4) {
+        grid-area: unset;
+    }
+
+    .article_layout_1 .inner {
+        display: grid;
+        grid-template-areas: unset;
+        grid-template-columns: 1fr 1fr;
+        max-height: unset;
+    }
+
+    .article_bg_img_card .article_content h3 {
+        font-size: 1rem;
+        line-height: 26px;
+        font-weight: 700;
+    }
+
     /* Header Menu responsive css */
 
     .sticky_menu .menu {
@@ -146,7 +175,7 @@
     }
 
     .sticky_menu .menu.active {
-        box-shadow: 0px -10px 0px 100vw #22222284;
+        box-shadow: 0px -10px 2000px 100vw #22222284;
         transform: translateX(0vw);
     }
 
@@ -244,6 +273,15 @@
         grid-template-columns: 1fr;
     }
 
+
+    .article_layout {
+        padding: 1rem 0 2rem 0;
+    }
+
+    .article_layout_1 .inner {
+        gap: 10px;
+    }
+
     .footer_newsletter .inner .left p,
     .article_card.article_card_sm h3,
     .article_list_card .right h4,
@@ -281,9 +319,36 @@
     .sidebar_area .recent_posts_wrapper .inner {
         gap: 1rem;
     }
+
+    .blog_detail .author_wrap {
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .blog_detail .author_wrap .author_img {
+        min-height: 50px;
+        min-width: 50px;
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    .blog_detail .author_wrap .author_name {
+        gap: 0;
+    }
+
+    .contact_wrap {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width:600px) {
+    .article_layout_1 .inner {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width:480px) {
+
     p {
         font-size: 16px;
         line-height: 26px;
@@ -319,6 +384,11 @@
     .sticky_menu .menu {
         max-width: 100%;
         width: 100%;
+    }
+
+    .blog_detail .author_wrap {
+        padding-top: 1rem;
+        margin-top: 1rem;
     }
 
     /*  */
